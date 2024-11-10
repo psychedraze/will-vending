@@ -21,21 +21,25 @@ const { linkText, imageOne, imageTwo } = Astro.props;
         <a href={linkText}>Learn more</a>
       </p>
     </div>
-    <div className="grid grid-cols-2 gap-2" style={{ transform: 'scale(0.5)' }}>
-        <Image
-            src={`/images/${imageOne}`}
-            width={600}
-            height={600 / 1.5}
-            alt="Vending1"
-            className="rounded-md object-cover w-full h-auto"
-        />
-        <Image
-            src={`/images/${imageTwo}`}
-            width={600}
-            height={600 / 1.5}
-            alt="Vending2"
-            className="rounded-md object-cover w-full h-auto pt-8"
-        />
+    <div className="grid grid-cols-2 gap-4">
+        <div className="w-[90%] mx-auto">
+            <Image
+                src={`/images/${imageOne}`}
+                width={540} // 90% of 600
+                height={540 / 1.5} // 90% of original height
+                alt="Vending1"
+                className="rounded-md object-cover w-full h-auto"
+            />
+        </div>
+        <div className="w-[90%] mx-auto">
+            <Image
+                src={`/images/${imageTwo}`}
+                width={540} // 90% of 600
+                height={540 / 1.5} // 90% of original height
+                alt="Vending2"
+                className="rounded-md object-cover w-full h-auto pt-8"
+            />
+        </div>
     </div>
   </div>
 </section>
