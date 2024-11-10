@@ -22,22 +22,24 @@ const { linkText, imageOne, imageTwo } = Astro.props;
       </p>
     </div>
     <div className="grid grid-cols-2 gap-4">
-        <div className="w-[50%] mx-auto">
+        <div className="w-9/12 mx-auto">
             <Image
                 src={`/images/${imageOne}`}
-                width={540} // 90% of 600
-                height={540 / 1.5} // 90% of original height
+                layout="responsive"
+                width={600} // Original image width
+                height={600 / 1.5} // Original image height
                 alt="Vending1"
-                className="rounded-md object-cover w-full h-auto"
+                className="rounded-md object-cover"
             />
         </div>
-        <div className="w-[50%] mx-auto">
+        <div className="w-9/12 mx-auto">
             <Image
                 src={`/images/${imageTwo}`}
-                width={540} // 90% of 600
-                height={540 / 1.5} // 90% of original height
+                layout="responsive"
+                width={600} // Original image width
+                height={600 / 1.5} // Original image height
                 alt="Vending2"
-                className="rounded-md object-cover w-full h-auto pt-8"
+                className="rounded-md object-cover pt-8"
             />
         </div>
     </div>
