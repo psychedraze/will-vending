@@ -22,7 +22,7 @@ const { linkText, imageOne, imageTwo } = Astro.props;
       </p>
     </div>
     <div className="grid grid-cols-2 gap-4">
-        <div className="w-[90%] mx-auto">
+        <div className="w-[50%] mx-auto">
             <Image
                 src={`/images/${imageOne}`}
                 width={540} // 90% of 600
@@ -31,7 +31,7 @@ const { linkText, imageOne, imageTwo } = Astro.props;
                 className="rounded-md object-cover w-full h-auto"
             />
         </div>
-        <div className="w-[90%] mx-auto">
+        <div className="w-[50%] mx-auto">
             <Image
                 src={`/images/${imageTwo}`}
                 width={540} // 90% of 600
