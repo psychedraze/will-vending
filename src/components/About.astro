@@ -21,20 +21,20 @@ const { linkText, imageOne, imageTwo } = Astro.props;
         <a href={linkText}>Learn more</a>
       </p>
     </div>
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-4 scale-75">
         <Image
             src={`/images/${imageOne}`}
             width={600}
             height={600 / 1.5}
             alt="Vending1"
-            className="rounded-md object-cover w-full h-6/12"
+            className="rounded-md object-cover w-full h-auto"
         />
         <Image
             src={`/images/${imageTwo}`}
             width={600}
             height={600 / 1.5}
             alt="Vending2"
-            className="rounded-md object-cover w-full h-6/12 pt-8"
+            className="rounded-md object-cover w-full h-auto pt-8"
         />
     </div>
   </div>
