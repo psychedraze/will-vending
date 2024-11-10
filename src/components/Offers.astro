@@ -3,15 +3,15 @@ import ImageCard from "./ImageCard.astro";
 const offers = [
     {
         imageURL:"dumbbells.jpg",
-        offerText:"Tour Our Gym"
+        offerText:"Request a Vending Quota"
     },
     {
         imageURL:"rowing.jpg",
-        offerText:"Check out our Group Classes"
+        offerText:"Check out all our locations"
     },
     {
         imageURL:"skipping.jpg",
-        offerText:"Ask about Personal Training"
+        offerText:"Ask about our previous customers"
     }
 ]
 ---
@@ -19,7 +19,8 @@ const offers = [
 
 <section class="py-12 text-center">
 <h1 class="yellowText text-5xl italic uppercase">What we offer</h1>
-<p class="text-white">We're committed to bringing you the best workout experience</p>
+<p class="text-white">We're committed to bringing your location the best vending
+experiences for passerbyers and local customers!</p>
 <div class="grid grid-cols-1 md:grid-cols-3">
 {
     offers.map((offer)=>(
